@@ -10,4 +10,8 @@ app.use(respHeaderMiddleware)
 const respDataMiddleware = require('./middleware/koa_response_data')
 app.use(respDataMiddleware)
 
-app.listen(8888)
+app.listen(8888,()=>{
+    console.log('Hello');
+})
+
+
